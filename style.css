@@ -30,8 +30,10 @@ main {
 
 .cards {
     display: flex;
-
+    align-items: center;
     justify-content: center;
+
+    
 
     width: 70%;
     height: 500px;
@@ -100,4 +102,35 @@ main {
     background-color: hsla(0, 0%, 100%, 0);
     color: var(--very-light-gray);
     border: 2px solid var(--very-light-gray);
+}
+
+
+
+@media (max-width: 376px) {
+
+    .cards {
+        flex-direction: column;
+        justify-content: right;
+    }
+
+
+    .sedans {
+        background-color: var(--bright-orange);
+        color: var(--bright-orange);
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
+    .suvs {
+        background-color: var(--dark-cyan);
+        color: var(--dark-cyan);
+    }
+    
+    .luxury {
+        background-color: var(--very-dark-cyan);
+        color: var(--very-dark-cyan);
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
 }
